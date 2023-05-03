@@ -9,3 +9,8 @@ f = temp
 
 print(t)
 print(f)
+
+
+# string
+test_string: str = "Hello World!"
+print(test_string)
