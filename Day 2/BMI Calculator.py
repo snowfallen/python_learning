@@ -1,4 +1,4 @@
-height = input("enter your height in m: ")
-weight = input("enter your weight in kg: ")
-result = int(weight) / (float(height) * (float(height)))
-print(int(result))
+height: float = input("enter your height in m: ")
+weight: int = input("enter your weight in kg: ")
+result: float = weight / (height * height)
+print(round(result, 2))
