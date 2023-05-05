@@ -28,7 +28,7 @@ way = input("Left or Right?  ").lower()
 if way == "right":
     print("You fall into a hole. Game over")          
 elif way == "left":
-    way = input("Swim or wait ?  ").lower()  
+    way = input("Swim or wait ? ").lower()  
     if way == "swim":
         print("Attacked by trout. Game Over!")
     elif way == "wait":    
@@ -38,7 +38,7 @@ elif way == "left":
         elif way == "yellow":
             print("You win!")
         elif way == "red":
-            print("Burned by fire.Game over")        
+            print("Burned by fire. Game over")        
         else:
             print("Game over") 
     else:
