@@ -1,5 +1,5 @@
-height: float = float(input("enter your height in m: "))
-weight: int = int(input("enter your weight in kg: "))
+height: float = float(input("enter your height in m:  "))
+weight: int = int(input("enter your weight in kg:  "))
 result = int(weight / (height **2))
 
 print(round(result, 2))
