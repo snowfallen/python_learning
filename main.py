@@ -1,20 +1,11 @@
-# boolean
-t: bool = True
-f: bool = False
-
-temp = t
-
-t = f
-f = temp
-
-print(t)
-print(f)
+old = int(input('Ваш возраст: '))
 
 
-# string
-test_string: str = "Hello World!"
-print(test_string)
-
-#branch
-test_branch: str = "I made new branch!"
-print(test_branch)
+if 3 <= old < 6:
+    print('"Заяц в лабиринте"')
+elif 6 <= old < 12:
+    print('"Марсианин"')
+elif 12 <= old < 16:
+    print('"Загадочный остров"')
+elif 16 <= old:
+    print('"Поток сознания"')
