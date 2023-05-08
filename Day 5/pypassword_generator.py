@@ -18,7 +18,7 @@ for sym in range (1, nr_symbols + 1):
    password_list.append(random.choice(symbols))
     
 
-for num in range (0, nr_numbers):
+for num in range (1, nr_numbers + 1):
     password_list.append(random.choice(numbers))
 
 
