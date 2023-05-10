@@ -11,8 +11,7 @@ class Solution:
             hold: int = target - number
             if number in hash_map:
                 return [hash_map[number], index]
-            else:
-                hash_map[hold] = index
+            hash_map[hold] = index
 
 
 Solution.two_sum(nums, 9)
