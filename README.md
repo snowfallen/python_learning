@@ -301,3 +301,47 @@ a value to it.
     # Returns True because a sequence with the value "pineapple" is not in the list.
     assert "pineapple" not in fruit_list
 ```
+***
+## Data Types
+### Numbers
+There are three numeric types in Python:
+- int (e.g. 2, 4, 20)
+    - bool (e.g. False and True, acting like 0 and 1)
+- float (e.g. 5.0, 1.6)
+- complex (e.g. 5+6j, 4-3j)
+#### Int
+Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+```
+    positive_integer = 3255522
+    negative_integer = -3255522
+    big_integer = 35656222554887711
+```
+#### Boolean
+ Booleans represent the truth values False and True. The two objects representing the values
+ False and True are the only Boolean objects. The Boolean type is a subtype of the integer type,
+ and Boolean values behave like the values 0 and 1, respectively, in almost all contexts, the
+ exception being that when converted to a string, the strings "False" or "True" are returned,
+ respectively.
+```
+    true_boolean = True
+    false_boolean = False
+```
+#### Float type
+Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+```
+    float_number = 7.0
+    # Another way of declaring float is using float() function.
+    float_number_via_function = float(7)
+    float_negative = -35.59
+    
+    # Float can also be scientific numbers with an "e" to indicate
+    # the power of 10.
+    float_with_small_e = 35e3
+    float_with_big_e = 12E4
+```
+#### Complex Type
+```
+    complex_number_1 = 5 + 6j
+    complex_number_2 = 3 - 2j
+    assert complex_number_1 * complex_number_2 == 27 + 8j
+```
