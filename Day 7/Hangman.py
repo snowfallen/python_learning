@@ -45,10 +45,4 @@ while not end_of_game:
         
     # ASCII check lives      
     print(stages[lives])
-        
-
-
-
     
-
-
