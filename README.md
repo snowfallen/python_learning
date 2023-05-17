@@ -24,6 +24,7 @@ It is used for:
 
 ### References
 - [w3schools.com](https://www.w3schools.com/python/python_intro.asp)
+- https://github.com/trekhleb/learn-python
 ***
 ## Variables
 Unlike other programming languages, Python has no command for
