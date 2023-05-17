@@ -9,21 +9,25 @@ class LinkedList:
         if values is not None:
             self.add_multiple_nodes(values)
 
+    @staticmethod
+    def __create_node(value):
+        return Node(value)
+
     def append(self, value):
         if self.head is None:
-            self.head = self.tail = Node(value)
+            self.head = self.tail = self.__create_node(value)
         else:
-            self.tail.next = Node(value)
+            self.tail.next = self.__create_node(value)
             self.tail = self.tail.next
 
         return self.tail
 
     def prepend(self, value):
         if self.head is None:
-            self.head = self.tail = Node(value)
+            self.head = self.tail = self.__create_node(value)
         else:
             current = self.head
-            self.head = Node(value)
+            self.head = self.__create_node(value)
             self.head.next = current
 
         return self.head
@@ -33,32 +37,35 @@ class LinkedList:
             self.append(value)
 
     def find(self, value):
-        return self.traveled(value).next
+        node = self.traveled(value).next
+        if node:
+            return node
+        return "Can't find value..."
 
     def delete(self, value):
         node = self.traveled(value)
-        node.next = node.next.next
-        return node.next
+        if node:
+            node.next = node.next.next
+            return node.next
+        return "Can't find value for deleting..."
 
     def insert(self, value, place):
         node = self.traveled(place)
-        new_node = Node(value)
+        new_node = self.__create_node(value)
         new_node.next = node.next
         node.next = new_node
         return new_node
 
     def traveled(self, value):
         for node in self:
-            if node.next.value == value:
+            if node.next and node.next.value == value:
                 return node
         return None
 
     def __len__(self):
         count = 0
-        node = self.head
-        while node:
+        for _ in self:
             count += 1
-            node = node.next
         return count
 
     def __str__(self):
