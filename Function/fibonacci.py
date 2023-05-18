@@ -1,4 +1,4 @@
-number_list: int = []
+number_list: list[int] = []
 
 for index in range (0, 10):
     if len(number_list) == 0:

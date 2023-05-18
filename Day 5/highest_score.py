@@ -1,7 +1,7 @@
 students_scores: int = input("Input a list of students scores ").split()
 
-for n in range (0, len(students_scores)):
-    students_scores[n] = int(students_scores[n])
+for index in range (0, len(students_scores)):
+    students_scores[index] = int(students_scores[index])
 print(students_scores)
 
 highest_score = 0

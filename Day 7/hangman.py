@@ -15,8 +15,9 @@ end_of_game = False
 
 # create blanks 
 display = []
-for letter in range(world_length):
+for _ in range(world_length):
     display.append("_")
+
     
 # use switch
 while not end_of_game:
