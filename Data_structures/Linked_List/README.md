@@ -13,23 +13,3 @@ Linked Lists are extremely useful in various scenarios. They are typically prefe
 - you want to insert items in the middle point more efficiently
 
 Unlike other general purpose languages, Python does not have a built-in implementation of Linked Lists in its standard library.
-
-```
-class Node:
-    def __init__(self, value, next_node=None, prev_node=None):
-        self.value = value
-        self.next = next_node
-        self.prev = prev_node
-
-    def __str__(self):
-        return str(self.value)
-        
-        
-class LinkedList:
-    def __init__(self, values=None):
-        self.head = None
-        self.tail = None
-        if values is not None:
-            self.add_multiple_nodes(values)
-            
-```
