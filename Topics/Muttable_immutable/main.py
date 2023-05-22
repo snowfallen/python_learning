@@ -10,26 +10,41 @@
 # dict
 # set
 
-# x: int = 5
-# print(id(x))
-# 4310899448
-# x: int = 10
-# print(id(x))
-# 4319878040
+x: str = 'Hello'
+# x[-1] = '!'
+# Class 'str' does not define '__setitem__', so the '[]' operator cannot be used on its instances
+print(x)
 
-my_str: str = "Hello worlf"
-# my_str[-1] = 'd'
-# TypeError: 'str' object does not support item assignment
 
-my_str2 = my_str
-# print(id(my_str))
-# 4343124656
-# print(id(my_str2))
-# 4343124656
+y: list = [1, 2, 3, 4]
+y.append(5)
+# print(y)
+# [1, 2, 3, 4, 5]
 
-# print(my_str is my_str2)
+# create an alias
+z = y
+
+print(y)
+print(z)
+# [1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5]
+
+z.append(0)
+print(z)
+print(y)
+# [1, 2, 3, 4, 5, 0]
+# [1, 2, 3, 4, 5, 0]
+
+y.append(9)
+print(z)
+print(y)
+# [1, 2, 3, 4, 5, 0, 9]
+# [1, 2, 3, 4, 5, 0, 9]
+
+print(id(y))
+print(id(z))
+# 4369552512
+# 4369552512
+
+print(y is z)
 # True
-
-my_str += '!'
-
-
