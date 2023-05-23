@@ -1,9 +1,11 @@
 from art import logo
+
+
 def clear():
     print("\n" * 50)
-bids = {}
-bidding_finished = False
-
+    
+bids: dict = {}
+bidding_finished: bool = False
 
 
 def find_highest_bidder (bidding_record):  
