@@ -26,6 +26,10 @@ class Menu:
             options += f"{item.name}/"
         return options
 
+    def set_items(self, name, water, milk, coffee, cost):
+        new_menu_item = MenuItem(name, water, milk, coffee, cost)
+        return self.menu.append(new_menu_item)
+
     def find_drink(self, order_name):
         """Searches the menu for a particular drink by name. Returns that item if it exists, otherwise returns None"""
         for item in self.menu:

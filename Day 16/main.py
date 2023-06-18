@@ -5,9 +5,8 @@ from money_machine import MoneyMachine
 menu = Menu()
 money_machine = MoneyMachine()
 coffe_maker = CoffeeMaker()
-new_coffe = MenuItem("Moccacino", 100, 150, 30, 3.5)
+menu.set_items("moccacino", 200, 150, 100, 3.5)
 
-print(menu.find_drink(new_coffe))
 
 def make_coffee():
     while True:
@@ -23,4 +22,4 @@ def make_coffee():
                 coffe_maker.make_coffee(drink)
 
 
-# make_coffee()
+make_coffee()
